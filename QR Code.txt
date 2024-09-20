@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zechariah Solution</title>
+    <style>
+        body {
+            background-color: #8F9779; /* Olive green */
+            color: #333; /* Dark text */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background {
+            background: url('https://example.com/path-to-cleaning-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.1; /* Light background effect */
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .popup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f5f5dc; /* Light beige */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+        }
+
+        .popup h2 {
+            margin: 0;
+            font-weight: bold; /* Bold font for the company name */
+        }
+
+        .popup p {
+            font-weight: bold; /* Bold font for phone and email */
+        }
+
+        .popup button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #f5f5dc; /* Light beige */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        img.logo {
+            max-width: 150px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <h1>Scan the QR Code</h1>
+    <img src="https://i.ibb.co/nrJY4gC/zechariah-solution-qr-code-v2-1.png" alt="QR Code" onclick="showPopup()" style="cursor: pointer;">
+
+    <div class="popup" id="popup">
+        <img src="https://i.ibb.co/R3httdG/logo.png" alt="Zechariah Solution Logo" class="logo">
+        <h2>Zechariah Solution</h2>
+        <p>Phone: <strong>8088214644</strong></p>
+        <p>Email: <strong>zechariahsolution@gmail.com</strong></p>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
